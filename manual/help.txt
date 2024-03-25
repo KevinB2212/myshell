@@ -1,0 +1,52 @@
+Getting Started
+To start using MyShell, follow these steps:
+
+Compilation: Compile the MyShell program using the provided Makefile or by directly compiling the source files.
+go to file location of makefile and enter "make" to the command line.
+
+Execution: Run the MyShell program by executing the generated executable.
+
+./myshell
+Interacting with MyShell: Once MyShell is running, you can enter commands at the prompt and press Enter to execute them.
+
+Basic Commands
+MyShell supports the following basic commands:
+
+cd: Change the current working directory.
+clr: Clear the screen.
+dir: List the contents of a directory.
+environ: List all environment variables.
+echo: Display a message on the screen.
+help: Display the user manual.
+pause: Pause operation of the shell until Enter is pressed.
+quit: Exit the shell.
+
+Command Syntax
+
+The syntax for executing commands in MyShell is as follows:
+
+command [arguments] [redirection]
+command: The command to be executed.
+arguments: Optional arguments to be passed to the command.
+redirection: Optional redirection operators (<, >, >>) to redirect input or output.
+
+Input/Output Redirection
+
+MyShell supports input and output redirection using the following operators:
+
+<: Redirect stdin from a file.
+>: Redirect stdout to a file (creates or truncates).
+>>: Redirect stdout to a file (creates or appends).
+Example usage:
+
+ls -l > output.txt
+
+Background Execution
+
+Commands can be executed in the background by appending & at the end of the command line. This allows the shell to return to the prompt immediately after launching the command.
+
+Example usage:
+
+sleep 10 &
+Exiting MyShell
+To exit MyShell, you can use the quit command or press Ctrl + D on your keyboard to send an EOF signal.
