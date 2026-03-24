@@ -1,20 +1,66 @@
-# CA216 Operating Systems: myshell
+# 🐚 MyShell
 
-## Introduction
-This is the starter repository for the _ca216 Operating Systems_ project entitled `myshell` and which you must complete individually.
-The assignment description can be found at: https://loop.dcu.ie/mod/assign/view.php?id=2326066
+> A custom Unix shell built from scratch in C
 
+## About
 
-## Academic Integrity
-There is a 0-tolerance approach to plagiarism in this module. If you are found to have breached the DCU Academic Integrity Policy you will simply be given 0.  It does not matter how small or minor the breach, you will simply be given 0 for this assessment.
+A fully functional Unix shell implementation written in C as part of DCU's Operating Systems module (CA216). Supports internal commands, external program execution, I/O redirection, piping, and background processes.
 
-## What you need to do
-You should follow the instructions below:
+## Features
 
-1. fork (do not clone) this repository.  Once you have forked it, make your own repository private and add me (Graham Healy - @ghealy) as "maintainer".
-2. add all your source files to the `src` directory.
-3. Add your files relating to the manual/help command to the `manual` directory.
-4. Your `makefile` should build the binary and place it in the `bin` directory.
+- **Built-in commands:** `cd`, `clr`, `dir`, `environ`, `echo`, `pause`, `help`, `quit`
+- **I/O redirection:** Input (`<`) and output (`>`, `>>`) redirection
+- **Background execution:** Run processes in the background with `&`
+- **Environment variables:** Full environment variable support
+- **Manual pages:** Built-in help documentation
 
-## Other notes
-There are supporting exercises to help you with the project.  You will find them all under  [Lab04/05 on the Loop CA216 Site](https://loop.dcu.ie/mod/book/view.php?id=2322719).  Use Git regularly and commit versions of your code often.
+## Project Structure
+
+```
+├── src/
+│   ├── myshell.c      # Main shell loop & command parsing
+│   ├── myshell.h      # Header file & function declarations
+│   ├── utility.c      # Utility functions & built-in commands
+│   ├── utility.h      # Utility header
+│   ├── makefile       # Build automation
+│   └── help.txt       # Built-in manual page
+└── manual/            # Documentation
+```
+
+## Build & Run
+
+```bash
+cd src
+make           # Compile
+./myshell      # Run the shell
+```
+
+## Usage
+
+```bash
+myshell> echo Hello World
+Hello World
+
+myshell> dir /home
+...
+
+myshell> ls -la > output.txt    # Output redirection
+
+myshell> sleep 10 &             # Background execution
+
+myshell> help                   # View manual
+```
+
+## Tech Stack
+
+- **Language:** C
+- **Build:** Make
+- **Platform:** Unix/Linux
+
+## Author
+
+**Kevin** — Dublin City University
+
+---
+
+*DCU CA216 — Operating Systems*
