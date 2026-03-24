@@ -1,4 +1,4 @@
-/* Kevin Biju 22332903*/
+/* Kevin Biju */
 #ifndef MYSHELL_H
 #define MYSHELL_H
 

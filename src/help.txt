@@ -1,4 +1,4 @@
-Kevin Biju (22332903)
+Kevin Biju
 
 Getting Started
 To start using MyShell, follow these steps:

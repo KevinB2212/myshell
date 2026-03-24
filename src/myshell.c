@@ -1,4 +1,4 @@
-/* Kevin Biju : 22332903 */
+/* Kevin Biju */
 #include <stdio.h>
 #include <stdlib.h>
 extern char **environ;

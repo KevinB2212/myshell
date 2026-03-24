@@ -1,4 +1,4 @@
-# MyShell Makefile, Kevin Biju, 22332903 - Operating Systems Project 1
+# MyShell Makefile, Kevin Biju - Operating Systems Project 1
 # ca216/myshell
 CC = gcc
 CFLAGS = -Wall
